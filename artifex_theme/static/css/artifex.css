@@ -1,3 +1,8 @@
+a span.fa.fa-twitter, a span.fa.fa-facebook {
+    font-size: 1.4em;
+    color: #333333;
+}
+
 .figure {
     margin-top: 2em;
     margin-bottom: 2em;
@@ -36,7 +41,8 @@
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #dd563a;
+    /* color: #dd563a; */
+    color: #aa3333;
     font-family: 'Unica One';
     font-size: 2em;
 }
@@ -51,7 +57,8 @@ a {
 }
 
 h1, h2, h3, h4 {
-    color: #dd563a;
+    /* color: #dd563a; */
+    color: #aa3333;
     font-family: 'Unica One';
 }
 
