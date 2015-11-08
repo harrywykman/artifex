@@ -50,6 +50,7 @@ a span.fa.fa-twitter, a span.fa.fa-facebook {
 .col-md-7 {
     margin: 0 auto;
     float: none;
+    width: 50%
 }
 
 a {
@@ -91,6 +92,7 @@ h1.home {
 
 body {
     font-family: 'Open Sans';
+    font-size: 16px;
     background-color: #ecf0ec;
     padding-top: 70px;
 }
