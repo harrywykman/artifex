@@ -50,7 +50,7 @@ a span.fa.fa-twitter, a span.fa.fa-facebook {
 .col-md-7 {
     margin: 0 auto;
     float: none;
-    width: 50%
+    width: 40em; 
 }
 
 a {
