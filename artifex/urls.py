@@ -7,6 +7,8 @@ from django.contrib import admin
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 
+import mezzanine_pagedown.urls
+
 
 admin.autodiscover()
 
@@ -26,6 +28,9 @@ if settings.USE_MODELTRANSLATION:
     )
 
 urlpatterns += patterns('',
+
+    url("^pagedown/", include(mezzanine_pagedown.urls)),
+
     # We don't want to presume how your homepage works, so here are a
     # few patterns you can use to set it up.
 

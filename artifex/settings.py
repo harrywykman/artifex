@@ -204,6 +204,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 ################
 
 INSTALLED_APPS = (
+    "mezzanine_pagedown",
     "artifex_theme",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -287,6 +288,17 @@ OPTIONAL_APPS = (
     PACKAGE_NAME_FILEBROWSER,
     PACKAGE_NAME_GRAPPELLI,
 )
+
+#####################
+# PAGEDOWN SETTINGS #
+#####################
+RICHTEXT_WIDGET_CLASS = 'mezzanine_pagedown.widgets.PageDownWidget'
+RICHTEXT_FILTER = 'mezzanine_pagedown.filters.custom'
+RICHTEXT_FILTERS = (RICHTEXT_FILTER,)
+PAGEDOWN_MARKDOWN_EXTENSIONS = ('extra','codehilite','toc')
+RICHTEXT_FILTER_LEVEL = 3
+PAGEDOWN_SERVER_SIDE_PREVIEW = True
+
 
 ##################
 # LOCAL SETTINGS #
