@@ -57,6 +57,11 @@ a span.fa.fa-twitter, a span.fa.fa-facebook {
     /* border-width: 40px 0px 0px; */
 }
 
+.recent-posts li {
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px dashed #CCC;
+}
+
 .navbar-default .navbar-nav > li > a {
     /* color: #dd563a; */
     color: #aa3333;
