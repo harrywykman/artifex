@@ -16,14 +16,14 @@
 {% endifinstalled %}
 
 {% compress css %}
-<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">                           
-<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">                           
+<link rel="stylesheet" href="{% static "css/bootstrap.css" %}">
+<link rel="stylesheet" href="{% static "css/mezzanine.css" %}">
 <link rel="stylesheet" href="{% static "css/bootstrap-theme.css" %}">
 <link rel="stylesheet" href="{% static "css/artifex.css" %}">
-<link rel="stylesheet" href="{% static "css/bootstrap-social.css" %}"> 
+<link rel="stylesheet" href="{% static "css/bootstrap-social.css" %}">
 <link rel="stylesheet" href="{% static "css/font-awesome.css" %}">
 <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
-<link rel="stylesheet" href="{% static "css/codehilite.css" %}"> 
+<link rel="stylesheet" href="{% static "css/codehilite.css" %}">
 {% if LANGUAGE_BIDI %}
 <link rel="stylesheet" href="{% static "css/bootstrap-rtl.css" %}">
 {% endif %}
@@ -67,6 +67,9 @@
 <div class="navbar-collapse collapse">
     {% search_form "all" %}
     {% page_menu "pages/menus/dropdown.html" %}
+    <div class="float-right">                                                    
+        <a href="{% url "blog_post_feed" "rss" %}" title="Subscribe by RSS"><span class="fa fa-rss fa-2x subscribe">&nbsp;</span></a><a href="" title="Subscribe by email"><span class="fa fa-envelope fa-2x subscribe">&nbsp;</span></a>
+    </div>
 </div>
 </div>
 </div>
@@ -90,11 +93,19 @@
 <div class="container">
 <div class="row">
 
+<div class="col-md-12 middle">
+    {% block home_title %}{% endblock %}
+</div>
+
+<div class="col-md-3 left">
+</div>
+
 <div class="col-md-6 middle">
     <h1>{% block title %}{% endblock %}</h1>
     {% block main %}{% endblock %}
 </div>
 
+<div class="col-md-3 right">
 </div>
 
 </div>
@@ -102,7 +113,10 @@
 
 <footer>
 <div class="container">
-{% page_menu "pages/menus/footer.html" %}
+
+
+
+{% include "blog/includes/footer_panel.html" %}
 
 <div class="row">
 <p class="site-info text-center">

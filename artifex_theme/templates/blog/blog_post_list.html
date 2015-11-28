@@ -33,9 +33,12 @@
 {% endif %}
 {% endblock %}
 
+{% block home_title %} <h1 class="home">Artifex </br> &nbsp;&nbsp; green</h1>
+{% endblock %}
+
+
 {% block main %}
 
-<h1 class="home">Artifex </br> &nbsp;&nbsp; green</h1>
 
 {% if tag or category or year or month or author %}
     {% block blog_post_list_filterinfo %}
