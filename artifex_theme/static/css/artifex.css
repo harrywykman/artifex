@@ -12,11 +12,11 @@ a:hover .subscribe {
 }
 
 .subscribe {
-    padding: 10px 15px;
+    padding: 10px 9px;
 }
 
-a span.fa.fa-twitter, a span.fa.fa-facebook {
-    font-size: 1.4em;
+a span.fa {
+    font-size: 1.8em;
     color: #333333;
 }
 
@@ -67,7 +67,7 @@ a span.fa.fa-twitter, a span.fa.fa-facebook {
     color: #aa3333;
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Roboto Condensed', sans-serif;
-    font-weight: 400;
+    font-weight: 300;
 /*    font-family: 'Unica One'; */
     font-size: 1.8em;
 }
